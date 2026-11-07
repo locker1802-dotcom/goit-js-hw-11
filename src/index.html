@@ -7,7 +7,23 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Розмітку додавай тут за технічним завданням -->
+    <main class="container">
+      <form class="form">
+        <label class="search-label">
+          <input
+            class="search-input"
+            type="text"
+            name="search-text"
+            placeholder="Search images..."
+            required
+          />
+        </label>
+        <button class="search-button" type="submit">Search</button>
+      </form>
+
+      <div class="loader is-hidden" role="status" aria-label="Loading"></div>
+      <ul class="gallery"></ul>
+    </main>
 
     <script type="module" src="./main.js"></script>
   </body>
